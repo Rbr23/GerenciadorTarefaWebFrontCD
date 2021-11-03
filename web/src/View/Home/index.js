@@ -5,14 +5,7 @@ import api from '../../services/api';
 
 /* IMAGENS */
 import Imagem from '../../Imgs/filter.png';
-import futebol from '../../Imgs/futebol.jpg';
-import viagem from '../../Imgs/viagem.png';
-import cinema from '../../Imgs/cinema.png';
-import lanche from '../../Imgs/lanche.jpg';
-import prova from '../../Imgs/prova.jpg';
-import academia from '../../Imgs/academia.jpg';
-import compra from '../../Imgs/compra.jpg';
-import trabalho from '../../Imgs/trabalho.png';
+
 
 
 
@@ -69,8 +62,8 @@ function Home() {
          <Styled.ContainerCard>
            {
              tasks.map(
-               t => ( 
-               <TaskCard />
+               t =>(  
+               <TaskCard type={t.type} title={t.title} when={t.when} />
                ))
            }
          </Styled.ContainerCard>
