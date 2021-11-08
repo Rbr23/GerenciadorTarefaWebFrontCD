@@ -1,7 +1,7 @@
 
-import futebol from '../Imgs/futebol.jpg';
-import viagem from '../Imgs/viagem.png';
-import cinema from '../Imgs/cinema.png';
+import futebol from '../Imgs/futebol.jpg';  //1
+import viagem from '../Imgs/viagem.png'; //2
+import cinema from '../Imgs/cinema.png'; //3
 import lanche from '../Imgs/lanche.jpg';
 import prova from '../Imgs/prova.jpg';
 import academia from '../Imgs/academia.jpg';
