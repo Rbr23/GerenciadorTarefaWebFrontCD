@@ -15,6 +15,7 @@ import Footer from '../../Components/Footer';
 import Filter from '../../Components/Filter';
 import TaskCard from '../../Components/TaskCard';
 import iconUtils from '../../utils/icons';
+import styled from 'styled-components';
 
 
 
@@ -53,7 +54,18 @@ function Task() {
           <Styled.Input>
               <input type="time" ></input>
           </Styled.Input>
-        
+
+          <Styled.Option>
+              <div>
+                  <input type="checkbox"></input>
+                  <span>CONCLUÍDO</span>
+              </div>
+              <button type="button">EXCLUIR</button>
+          </Styled.Option>
+
+          <Styled.Save>
+              <button type="button">SALVAR</button>
+          </Styled.Save>
       </Styled.Form>
       
       <Footer />
