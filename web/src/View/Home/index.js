@@ -27,7 +27,7 @@ function Home() {
 
   //função responsável por fazer as requisições para o backend
   async function loadTasks(){
-    await api.get(`/task//filter/${filterActive}/11:11:11:11:11:12`)
+    await api.get(`/task//filter/${filterActive}/11:11:11:11:11:11`)
     .then(response => {
       setTasks(response.data)
     })
