@@ -74,6 +74,14 @@ function Task() {
     useEffect(() => {
         loadTask();
     }, [])
+
+    async function deleteTask(){
+        const res = window.confirm("Gostaria de remover esta tarefa?")
+        if(res == true){
+            await api.delete(`/task/${id}`)
+            .then(setNavigate(true))
+        }
+    }
   
   return (
     <Styled.Container>
@@ -112,7 +120,7 @@ function Task() {
                   <input type="checkbox" check={done} onChange={e => setDone(e.target.value)}></input>
                   <span>CONCLUÍDO</span>
               </div>
-              <button type="button">EXCLUIR</button>
+              {id && <button type="button" onClick={deleteTask}>EXCLUIR</button>}
           </Styled.Option>
 
           <Styled.Save>
